@@ -7,7 +7,7 @@
 
 The platform was built from the ground up to ensure high availability, data isolation between tenants, and seamless asynchronous financial integrations.
 
-## Technology Stack
+## 🛠️ Technology Stack
 - **Back-end:** PHP, Node.js, RESTful APIs
 - **Front-end:** JavaScript (ES6+), React.js, Pixel-Perfect UI/UX
 - **Database:** MySQL (Multi-tenant architecture)
@@ -37,6 +37,7 @@ The entire ecosystem runs on a managed Linux Virtual Private Server (VPS).
 ---
 
 ## System Architecture Diagram
+
 ```mermaid
 graph TD
     subgraph Client Layer
@@ -66,5 +67,7 @@ graph TD
     
     API -->|Tenant Data Isolation| DB
     API <-->|Async Payments & License Provisioning| MP
+```
 
+---
 **Architected and Developed by:** [Breno Luiz da Silva](https://github.com/brenoads)
