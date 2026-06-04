@@ -37,7 +37,34 @@ The entire ecosystem runs on a managed Linux Virtual Private Server (VPS).
 ---
 
 ## System Architecture Diagram
-*(Coming soon: A visual representation of the data flow, reverse proxy setup, and database schema).*
+graph TD
+    subgraph Client Layer
+        U1[Restaurant Owner / Admin]
+        U2[POS / Front-end React]
+        U3[KDS / Kitchen Display]
+    end
+
+    subgraph Infrastructure & Routing
+        Proxy[Nginx Reverse Proxy & Wildcard SSL]
+    end
+
+    subgraph Application Layer
+        API[Core API: PHP / Node.js]
+    end
+
+    subgraph Data & Integrations
+        DB[(MySQL: Multi-tenant Database)]
+        MP((Mercado Pago API & Webhooks))
+    end
+
+    U1 -->|HTTPS| Proxy
+    U2 -->|HTTPS| Proxy
+    U3 -->|WebSocket / HTTPS| Proxy
+    
+    Proxy -->|Routes Subdomains| API
+    
+    API -->|Tenant Data Isolation| DB
+    API <-->|Async Payments & License Provisioning| MP
 
 ---
 👨‍💻 **Architected and Developed by:** [Breno Luiz da Silva](https://github.com/brenoads)
