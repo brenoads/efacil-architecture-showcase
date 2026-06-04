@@ -1,13 +1,13 @@
-# 🍽️ éFácil - SaaS Architecture & Engineering Showcase
+# éFácil - SaaS Architecture & Engineering Showcase
 
 > **Note:** The source code for the *éFácil* ecosystem is proprietary and currently running in production. This repository serves as an engineering showcase to detail the system architecture, infrastructure, and the technical challenges solved during its development.
 
-## 📌 Project Overview
+## Project Overview
 **éFácil** (efacil.cloud) is a comprehensive, multi-tenant SaaS ecosystem designed for the gastronomic sector. It provides restaurant owners with real-time management capabilities, integrating a high-performance Point of Sale (POS) and a dynamic Kitchen Display System (KDS). 
 
 The platform was built from the ground up to ensure high availability, data isolation between tenants, and seamless asynchronous financial integrations.
 
-## 🛠️ Technology Stack
+## Technology Stack
 - **Back-end:** PHP, Node.js, RESTful APIs
 - **Front-end:** JavaScript (ES6+), React.js, Pixel-Perfect UI/UX
 - **Database:** MySQL (Multi-tenant architecture)
@@ -16,7 +16,7 @@ The platform was built from the ground up to ensure high availability, data isol
 
 ---
 
-## 🏗️ Architectural Highlights & Solved Challenges
+## Architectural Highlights & Solved Challenges
 
 ### 1. Multi-Tenancy & Data Isolation
 Designing a SaaS for multiple businesses required a strict data isolation strategy. The database architecture was modeled to ensure that each tenant's data is logically separated, preventing data leakage and optimizing query execution times. Dynamic subdomains and Wildcard SSL were configured via Nginx to route traffic accurately to the respective tenant environments.
@@ -36,7 +36,7 @@ The entire ecosystem runs on a managed Linux Virtual Private Server (VPS).
 
 ---
 
-## 📊 System Architecture Diagram
+## System Architecture Diagram
 *(Coming soon: A visual representation of the data flow, reverse proxy setup, and database schema).*
 
 ---
