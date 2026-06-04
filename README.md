@@ -37,6 +37,7 @@ The entire ecosystem runs on a managed Linux Virtual Private Server (VPS).
 ---
 
 ## System Architecture Diagram
+```mermaid
 graph TD
     subgraph Client Layer
         U1[Restaurant Owner / Admin]
@@ -66,5 +67,4 @@ graph TD
     API -->|Tenant Data Isolation| DB
     API <-->|Async Payments & License Provisioning| MP
 
----
-👨‍💻 **Architected and Developed by:** [Breno Luiz da Silva](https://github.com/brenoads)
+**Architected and Developed by:** [Breno Luiz da Silva](https://github.com/brenoads)
