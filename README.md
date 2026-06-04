@@ -7,7 +7,7 @@
 
 The platform was built from the ground up to ensure high availability, data isolation between tenants, and seamless asynchronous financial integrations.
 
-## 🛠️ Technology Stack
+## Technology Stack
 - **Back-end:** PHP, Node.js, RESTful APIs
 - **Front-end:** JavaScript (ES6+), React.js, Pixel-Perfect UI/UX
 - **Database:** MySQL (Multi-tenant architecture)
